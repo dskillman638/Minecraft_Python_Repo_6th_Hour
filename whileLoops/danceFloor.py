@@ -17,3 +17,7 @@ while floorX <= pos.x <= floorX + width and floorZ <= pos.z <= floorZ + length:
         block = 57
     else:
         block = 41
+    mc.setBlocks(floorX, floorY, floorZ,
+             floorX + width, floorY, floorZ + length, block)
+    pos = mc.player.getTilePos()
+    time.sleep(0.5)
