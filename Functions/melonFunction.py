@@ -4,16 +4,17 @@ mc = Minecraft.create()
 import time
 
 def placeBlock(x, y, z):
-    pos = mc.player.getPos()
-    x = pos.x
-    y = pos.z
-    z = pos.z
-    mc.setBlock(x, y, z)
+    mc.setBlock(x, y, z, 103)
     time.sleep(10)
+    
+pos = mc.player.getPos()
+x = pos.x
+y = pos.y
+z = pos.z
 
-placeBlock(x, y - 1, z, 103)
-placeBlock(x + 5, y, z, 103)
-placeBlock(x, y - 1, z + 4, 103)
-placeBlock(x + 3, y - 1, z, 103)
-placeBlock(x + 2, y - 1, z - 2, 103)
-placeBlock(x, y - 1, z + 3, 103)
+placeBlock(x, y - 1, z)
+placeBlock(x + 5, y, z)
+placeBlock(x, y - 1, z + 4)
+placeBlock(x + 3, y - 1, z)
+placeBlock(x + 2, y - 1, z)
+placeBlock(x, y - 1, z + 3)
