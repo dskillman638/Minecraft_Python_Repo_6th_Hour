@@ -19,6 +19,6 @@ while True:
     blockHitsLength = len(blockHits)
     mc.postToChat('Your score is ' + str(blockHitsLength))
 
-    name[scoreboard] = name
+    scoreboard[name] = scoreboard
 
-    print(scoreboard)    
+    mc.postToChat(scoreboard)    
