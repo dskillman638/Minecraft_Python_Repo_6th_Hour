@@ -19,12 +19,12 @@ try:
         char = screen.getch()
         if char == ord('q'):
             break
-        elif char == curses.KEY_UP:
+        elif char == curses.KEY_DOWN:
             GPIO.output(7,False)
             GPIO.output(8,True)
             GPIO.output(9,False)
             GPIO.output(10,True)
-        elif char == curses.KEY_DOWN:
+        elif char == curses.KEY_UP:
             GPIO.output(7,True)
             GPIO.output(8,False)
             GPIO.output(9,True)
